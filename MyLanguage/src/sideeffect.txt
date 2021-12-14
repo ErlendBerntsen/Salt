@@ -1,0 +1,13 @@
+int a = 1;
+int b = 1;
+
+void main() {
+	sideEffect(b);
+	print(a);
+	print(b);
+}
+
+void sideEffect (int n){
+	a = a + 1;
+	n = n + 1;
+}

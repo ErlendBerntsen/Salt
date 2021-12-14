@@ -1,0 +1,15 @@
+int x;
+
+void main() {
+	x = 2;
+	f();
+}
+
+void f() {
+	int x = 3;
+	g();
+}
+
+void g() {
+	print(x);
+}

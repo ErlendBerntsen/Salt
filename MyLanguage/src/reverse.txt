@@ -1,0 +1,22 @@
+int[] randomList = [83,69,60,33,79];
+
+void main(){
+	reverseList();
+	print(randomList);
+}
+
+void reverseList(){
+	int index = 0;
+	while(index < (size(randomList) / 2)){
+		in opposite = size(randomList) - index - 1;
+		randomList = swap(index, opposite, randomList);
+		index = index + 1;
+	}
+}
+
+int[] swap(int x, int y, int[] list){
+	int temp = list[y];
+	list[y] = list[x];
+	list[x] = temp;
+	return list;
+}
